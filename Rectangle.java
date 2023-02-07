@@ -11,8 +11,14 @@ public class Rectangle extends Shape{
         width = 0;
     }// end no arg
 
+    public Rectangle(double length, double width) {
+        // implicit call to super class no-arg constructor
+        this.length = length;
+        this.width = width;
+    }// end full arg
+    
     public Rectangle(String name, double length, double width) {
-        super(name);
+        super(name);            // explicit call with argument(s)
         this.length = length;
         this.width = width;
     }// end full arg
